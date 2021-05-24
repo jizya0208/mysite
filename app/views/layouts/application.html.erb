@@ -3,6 +3,7 @@
   <head>
     <title>Mysite</title>
     <%= csrf_meta_tags %>
+    <meta name="viewport" content="width=device-width, initial-scale=1,0">
     <script src="https://kit.fontawesome.com/79e8119200.js" crossorigin="anonymous"></script>
     <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
     <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
@@ -13,9 +14,16 @@
     <header>
       <div class="container header-group">
         <div class="header-left">
-          <div><%= image_tag "logo.png", :class => "logo", :alt => "MySiteロゴ" %></div>
+          <%= link_to "#mv" do %>
+            <%= image_tag "logo.png", :class => "logo", :alt => "MySiteロゴ" %>
+          <% end %>
         </div>
         <div class="header-right">
+          <div id="humberger">
+            <div></div>
+            <div></div>
+            <div></div>
+          </div>
           <nav>          
             <ul class="nav-list">
               <%= link_to '#portfolio' do %>
@@ -37,7 +45,7 @@
     <main><%= yield %></main>
     
     <footer>
-      <p class="footer-text">©2021 WebCamp</p>
+      <p class="container footer-text">©2021 WebCamp</p>
     </footer>
   </body>
 </html>

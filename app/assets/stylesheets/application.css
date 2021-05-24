@@ -26,6 +26,19 @@
     background-color: #EC715F;
  }
  
+ main {
+   width: 100%;
+ }
+ 
+ 	.left-content{
+		width: 100%;
+	}
+
+	.right-content{
+		width: 100%;
+	}
+
+ 
  .logo {
    height: 70px;
  }
@@ -63,6 +76,7 @@
  #mv {
     background-image: url("mv.png");
     background-size: cover;
+    background-position: center;
     height: 650px;
     width: 100%;
     text-align: center;
@@ -82,7 +96,6 @@
  
  #portfolio {
    background: #ECEFF1;
-   width: 100%;
    text-align: center;
   }
    
@@ -251,3 +264,93 @@ footer > p {
   color: #ffffff;
   line-height: 60px;
 }
+
+
+/*================メディアクエリ===================*/
+
+@media screen and (max-width: 768px) {
+  header, .logo {
+    height: 50px;
+  }
+  
+  #humberger {
+    position: relative;
+    height: 40px;
+    width: 40px;
+    border: 1px solid #ffffff;
+    margin: 5px;
+  }
+  
+  #humberger div {
+    position: absolute;
+    left: 8px;
+    height: 2px;
+    width: 22px;
+    background-color: #ffffff;
+    border-radius: 2px;
+    display: inline-block;
+  }
+  
+  #humberger > div:first-child {
+    top: 10px;
+  }
+  
+   #humberger > div:nth-child(2) {
+    top: 18px;
+  }
+  
+   #humberger > div:nth-child(3) {
+    bottom: 8px;
+  }
+  
+  
+  .nav-list-item {
+   display: none;
+  }
+  
+  #mv {
+    background-image: url("code.png");
+  }
+  
+  .mv-title {
+    font-size: 40px;
+  }
+  
+  .container {
+    width: 90%;
+  }
+  
+  .flex {
+    display: block;
+  }
+  
+  .production:nth-child(odd) {
+    display: none;
+  }
+  
+  .production:nth-child(even) {
+    margin: 0 auto 10px;
+  }
+  
+  .strength-group, .profile-group, .contact-group {
+    display: block;
+    flex-flow: row wrap;
+    text-align: center; 
+    width: 320px;
+    margin: 0 auto;
+  }
+  
+  .left-content, .right-content {
+    width: 100%;
+  }
+  
+  .fa {
+    margin-right: 5px;
+  }
+  
+  footer {
+    font-size: 16px;
+  }
+  
+}
+
