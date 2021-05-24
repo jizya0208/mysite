@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Mysite</title>
+    <%= csrf_meta_tags %>
+    <script src="https://kit.fontawesome.com/79e8119200.js" crossorigin="anonymous"></script>
+    <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track': 'reload' %>
+    <%= javascript_include_tag 'application', 'data-turbolinks-track': 'reload' %>
+  </head>
+  
+
+  <body>
+    <header>
+      <div class="container header-group">
+        <div class="header-left">
+          <div><%= image_tag "logo.png", :class => "logo", :alt => "MySiteロゴ" %></div>
+        </div>
+        <div class="header-right">
+          <nav>          
+            <ul class="nav-list">
+              <%= link_to '#portfolio' do %>
+              <li class="nav-list-item">Portfolio</li>
+              <% end %>
+              <%= link_to '#feature' do %>
+              <li class="nav-list-item">Feature</li>
+              <% end %>
+              <%= link_to '#profile' do %>
+              <li class="nav-list-item">Profile</li>
+              <% end %>
+              <%= link_to '#contact' do %>
+              <li class="nav-list-item">Contact</li>
+              <% end %>
+            </ul>
+          </nav>
+        </div>
+    </header>
+    <main><%= yield %></main>
+    
+    <footer>
+      <p class="footer-text">©2021 WebCamp</p>
+    </footer>
+  </body>
+</html>

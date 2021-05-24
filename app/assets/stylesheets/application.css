@@ -1,0 +1,253 @@
+/*
+ * This is a manifest file that'll be compiled into application.css, which will include all the files
+ * listed below.
+ *
+ * Any CSS and SCSS file within this directory, lib/assets/stylesheets, vendor/assets/stylesheets,
+ * or any plugin's vendor/assets/stylesheets directory can be referenced here using a relative path.
+ *
+ * You're free to add application-wide styles to this file and they'll appear at the bottom of the
+ * compiled file so the styles you add here take precedence over styles defined in any other CSS/SCSS
+ * files in this directory. Styles in this file should be added after the last require_* statement.
+ * It is generally better to create a new file per style scope.
+ *
+ *= require_tree .
+ *= require_self
+ */
+
+ * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    }
+ 
+ header {
+  　height: 70px;
+    width: 100%;
+    background-color: #EC715F;
+ }
+ 
+ .logo {
+   height: 70px;
+ }
+
+ .container {
+   width: 1024px;
+   margin: 0 auto;
+ }
+ 
+ .header-group {
+   display: flex;
+   text-align: center;
+ }
+ 
+ .header-right {
+    margin-left: auto;
+ }
+ 
+ a {
+   text-decoration: none;
+ }
+ 
+ .nav-list {
+    line-height: 70px;
+ }
+ 
+ .nav-list-item {
+    display: inline-block; 
+    list-style: none; 
+    margin: 0 30px;
+    color: #FAFAFA;
+    font-size: 16px; 
+ }
+ 
+ #mv {
+    background-image: url("mv.png");
+    background-size: cover;
+    height: 650px;
+    width: 100%;
+    text-align: center;
+ }
+ 
+ .mv-title {
+   padding-top: 200px;
+   color: #FAFAFA;
+   font-size: 64px;
+ }
+ 
+ .mv-text  {
+   padding-top: 10px;
+   font-size: 20px;
+   color: #FAFAFA;
+ }
+ 
+ #portfolio {
+   background: #ECEFF1;
+   width: 100%;
+   text-align: center;
+  }
+   
+ .pf-group {
+   width: 920px;
+ }
+ 
+ .heading {
+   padding-top: 90px;
+   font-size: 32px;
+   text-align: center;
+   color: #000000;
+ }
+ 
+ .heading:after {
+   content: "";
+   display: block;
+   height: 3px;
+   width: 70px;
+   margin: 8px auto 0;
+   background-color: #EC715F;
+ }
+ 
+ .heading-text {
+   margin: 30px 0; 
+   font-size: 16px;
+   text-align: center;
+   color: #000000;
+ }
+ 
+ .flex {
+   display: flex;
+   padding: 30px 0 90px 0;
+   flex-wrap: wrap;
+ }
+ 
+ .production {
+   height: 250px;
+   width: 300px;
+   margin-right: 10px;
+   margin-bottom: 10px;
+   background-size: cover;
+   background-position: center;
+ }
+ 
+ .production:nth-child(3n) {
+    margin: 0; 
+ }
+ 
+ .production:nth-child(1) {
+   background-image: url("sketch.jpg");
+ }
+ 
+ .production:nth-child(2) {
+   background-image: url("websuku.png");
+ }
+ 
+ .production:nth-child(3) {
+   background-image: url("write.jpg");
+ }
+ 
+ .production:nth-child(4) {
+   background-image: url("webcamp.png");
+ }
+ 
+ .production:nth-child(5) {
+   background-image: url("talk.jpg");
+ }
+ 
+ .production:nth-child(6) {
+   background-image: url("webcamp-mother.png");
+ }
+ 
+ #profile {
+   background-color: #ECEFF1;
+ }
+ 
+ .strength-group {
+   width: 980px;
+   padding: 30px 0 90px 0;
+   margin: 0 auto;
+   display: flex;
+ }
+ 
+ .strength {
+   width: 320px;
+   text-align: center;
+   margin-right: 10px;
+ }
+ 
+ .fas {
+   font-size: 60px;
+   text-align: center;
+ }
+ 
+ .strength-title {
+   padding: 10px 0;
+ }
+ 
+ .strength-text {
+   text-align: left;
+ }
+ 
+ .profile-group {
+   display: flex;
+   padding: 30px 0 90px 0;
+ }
+ 
+ 
+.left-content {
+  width: 50%;
+}
+
+.profile-img {
+  border-radius: 50%;
+  background-image: url('my-icon.jpg');
+  height: 250px;
+  width: 250px;
+  margin: auto;
+}
+ 
+.right-content {
+  width: 50%;
+}
+
+.description-title {
+  font-size: 20px;
+  margin: 20px 0 5px 0;
+}
+ 
+.contact-group {
+  display: flex;
+  width: 800px;
+  padding: 30px 0 90px 0;
+  margin: 0 auto;
+} 
+
+.left-contact-content {
+  width: 140px;
+  margin: 0 auto;
+}
+
+
+.fa {
+  font-size: 50px;
+  margin-right: 20px;
+}
+
+.fa:last-child {
+  margin-right: 0;
+}
+
+.right-contact-content {
+  width: 176px;
+  margin: 0 auto;
+}
+
+footer {
+  height: 60px;
+  width: 100%;
+  background-color: #EC715F;
+  text-align: center
+}
+
+footer > p {
+  color: #ffffff;
+  line-height: 60px;
+}
